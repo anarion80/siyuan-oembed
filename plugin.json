@@ -22,12 +22,14 @@
   "displayName": {
     "default": "Oembed and bookmark cards",
     "en_US": "Oembed and bookmark cards",
-    "pl_PL": "Oembed i karty zakładek"
+    "pl_PL": "Oembed i karty zakładek",
+    "zh_CN": "Oembed和书签卡片"
   },
   "description": {
     "default": "A plugin that extracts oembed data from links and creates a Ghost CMS-style cards as bookmarks",
     "en_US": "A plugin that extracts oembed data from links and creates a Ghost CMS-style cards as bookmarks",
-    "pl_PL": "Wtyczka wyodrębniająca dane oembed z linków i tworząca karty w stylu Ghost CMS jako zakładki"
+    "pl_PL": "Wtyczka wyodrębniająca dane oembed z linków i tworząca karty w stylu Ghost CMS jako zakładki",
+    "zh_CN": "一个从链接中提取oembed数据并且创建一个Ghost CMS-style卡片作为书签的插件"
   },
   "readme": {
     "default": "README.md",
