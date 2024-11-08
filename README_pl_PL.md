@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="SiYuan" src="icon.png">
+<img alt="SiYuan" src="https://raw.githubusercontent.com/anarion80/siyuan-oembed/refs/heads/main/icon.png">
 <br>
 <em>SiYuan Oembed and Ghost-style bookmark cards</em>
 <br><br>
@@ -76,7 +76,7 @@ Wtyczka posiada kilka ustawień konfiguracyjnych:
 
 ## ⌛ Problemy i ograniczenia
 
-Obecnie wtyczka używa [openGraphScraperLite](https://github.com/jshemas/openGraphScraperLite) do pobierania metadanych Open Graph i Twitter. Jest to jedyne narzędzie, które znalazłem, które daje się zbundlować z wtyczką bez problemów. Powoduje to również duży rozmiar wtyczki (ponad 3MB). [Metascraper](https://github.com/microlinkhq/metascraper) jest znacznie lepszy, ale niestety nie działa w środowisku klienckim wtyczki.
+Obecnie wtyczka używa [openGraphScraperLite](https://github.com/jshemas/openGraphScraperLite) do pobierania metadanych Open Graph i Twitter. Jest to jedyne narzędzie, które znalazłem, które daje się zbundlować z wtyczką bez problemów. Powoduje to również duży rozmiar wtyczki (ponad 3MB bez kompresji). [Metascraper](https://github.com/microlinkhq/metascraper) jest znacznie lepszy, ale niestety nie działa w środowisku klienckim wtyczki.
 
 Inną opcją byłoby użycie [API Microlink](https://api.microlink.io) do pobierania metadanych linków, ale jest to ograniczone do 50 zapytań/dzień w darmowym planie.
 

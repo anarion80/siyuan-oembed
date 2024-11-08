@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="SiYuan" src="icon.png">
+<img alt="SiYuan" src="https://raw.githubusercontent.com/anarion80/siyuan-oembed/refs/heads/main/icon.png">
 <br>
 <em>SiYuan Oembed and Ghost-style bookmark cards</em>
 <br><br>
@@ -76,7 +76,7 @@ There are several configuration settings available for the plugin:
 
 ## ⌛ Issues and limitations
 
-Currently, the plugin uses [openGraphScraperLite](https://github.com/jshemas/openGraphScraperLite) for scraping Open Graph and Twitter metadata. It is the only one that I found that gets bundled with the plugin without issues. It is also causing big plugin size (over 3MB). [Metascraper](https://github.com/microlinkhq/metascraper) is much better, but unfortunately doesn't work in client environment of the plugin.
+Currently, the plugin uses [openGraphScraperLite](https://github.com/jshemas/openGraphScraperLite) for scraping Open Graph and Twitter metadata. It is the only one that I found that gets bundled with the plugin without issues. It is also causing big plugin size (over 3MB uncompressed). [Metascraper](https://github.com/microlinkhq/metascraper) is much better, but unfortunately doesn't work in client environment of the plugin.
 
 Another option would be to use [Microlink API](https://api.microlink.io) to get link metadata, but that is limited to 50 requests/day in the free plan.
 
