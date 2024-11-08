@@ -34,7 +34,8 @@
   "readme": {
     "default": "README.md",
     "en_US": "README.md",
-    "pl_PL": "README_pl_PL.md"
+    "pl_PL": "README_pl_PL.md",
+    "zh_CN": "README_zh_CN.md"
   },
   "funding": {
     "custom": [

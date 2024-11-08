@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-<a href="README.md">English</a> | <a href="README_pl_PL.md">Polish</a>
+<a href="README.md">English</a> | <a href="README_pl_PL.md">Polish</a> | <a href="README_zh_CN.md">简体中文</a>
 </p>
 
 ## ✨ Opis wtyczki
