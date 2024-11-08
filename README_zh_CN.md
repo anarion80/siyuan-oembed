@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="SiYuan" src="icon.png">
+<img alt="SiYuan" src="https://raw.githubusercontent.com/anarion80/siyuan-oembed/refs/heads/main/icon.png">
 <br>
 <em>思源 Oembed 和 Ghost-style 书签卡片</em>
 <br><br>
