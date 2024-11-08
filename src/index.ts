@@ -7,6 +7,7 @@ import {
     IMenuItemOption,
     getBackend,
 } from "siyuan";
+import {IMenuItem} from "siyuan/types";
 import "@/index.scss";
 
 import { BlockIconTemplate, createBlockIconConfig, SlashCommandTemplates, ToolbarCommandsTemplates } from "./config";
@@ -23,6 +24,11 @@ export default class OembedPlugin extends Plugin {
     private isMobile: boolean;
     init() {
         setPlugin(this);
+    }
+    
+    updateProtyleToolbar(toolbar: Array<string | IMenuItem>) {
+        toolbar.push(...Object.values(ToolbarCommandsTemplates))
+        return toolbar;
     }
 
     async onload() {
@@ -53,10 +59,6 @@ export default class OembedPlugin extends Plugin {
                 callback: template.callback,
             };
         });
-
-        this.protyleOptions = {
-            toolbar: [...builtinEditTools, ...Object.values(ToolbarCommandsTemplates)],
-        };
 
         let end = performance.now();
         logger.debug(`Loading oembed completed in ${end - start} ms`);
