@@ -1,0 +1,51 @@
+---
+addTopBarIcon: 由插件添加一个顶栏图表
+cancel: 取消
+save: 保存
+byeMenu: 'Bye, Menu!'
+helloPlugin: 'Hello, Plugin!'
+byePlugin: 'Bye, Plugin!'
+showDialog: 显示对话框
+removedData: 数据已删除
+confirmRemove: 确认要删除 ${name} 的数据吗?
+insertEmoji: 插入Emoji
+toggleOembed: 切换嵌入链接
+toggleBookmarkCard: 切换书签卡片
+removeSpace: 移除空格
+convertOembed: 转换成嵌入链接
+getTab: 在调试器中打印所有打开的自定义选项卡
+name: Oembed
+hintTitle: 关于
+
+insertURLDialogTitle: 插入链接
+settings:
+  name: 设置
+  EnableDebug:
+    title: 启用调试
+    text: 启用详细调试来帮助解决问题
+  CatchClipboard:
+    title: 捕获剪贴板链接
+    text: 自动转换从剪贴板粘贴的链接
+  ClipboardConverter:
+    title: 选择粘贴样式
+    text: 从剪贴板中粘贴链接时应用哪个样式
+    options:
+      oembed: Oembed(嵌入样式)
+      bookmarkCard: Bookmark Card(书签卡片)
+  OembedBlacklist:
+    title: 屏蔽列表
+    text: 跳过转换的域名列表(每行一个)
+    placeholder: 输入域名以屏蔽
+  BookmarkCardBlacklist:
+    title: 屏蔽列表
+    text: 跳过转换的域名列表(每行一个)
+    placeholder: 输入域名以屏蔽
+  BookmarkCustomCSS:
+    title: 书签卡片的自定义CSS样式
+    text: 输入自定义的CSS来调整书签到你喜欢的样式。你可以调整所有`kg-card-*`和`kg-bookmark-*`的类样式。不要包括闭合的<style>标签。
+    placeholder: 输入自定义CSS
+
+SettingGroups:
+  general: 通用
+  oembed: Oembed(嵌入)
+  bookmarkCard: Bookmark card(书签卡片)
