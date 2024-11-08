@@ -92,28 +92,6 @@ export const NodeIcons = {
 export const STORAGE_NAME = "menu-config";
 export const CUSTOM_ATTRIBUTE = "custom-oembed-link";
 
-export const builtinEditTools: Array<string | IToolbarItem> = [
-    "block-ref",
-    "a",
-    "|",
-    "text",
-    "strong",
-    "em",
-    "u",
-    "s",
-    "mark",
-    "sup",
-    "sub",
-    "clear",
-    "|",
-    "code",
-    "kbd",
-    "tag",
-    "inline-math",
-    "inline-memo",
-    "|",
-];
-
 export const defaultBookmarkCardStyle = `
         .kg-card {
             font-family:
