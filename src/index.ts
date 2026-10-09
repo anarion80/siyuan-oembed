@@ -1,6 +1,5 @@
 import {
     Plugin,
-    showMessage,
     Dialog,
     getFrontend,
     IModel,
@@ -65,9 +64,10 @@ export default class OembedPlugin extends Plugin {
         logger.debug("Environment", { backEnd, frontEnd });
     }
 
-    async onunload() {
-        this.eventBus.on("click-blockicon", this.blockIconEventBindThis);
-        showMessage("Unloading Siyuan-Oembed");
+    onunload() {
+        // Unregister the handler: onload subscribes it, and subscribing again here
+        // leaked one listener per reload cycle.
+        this.eventBus.off("click-blockicon", this.blockIconEventBindThis);
     }
 
     uninstall() {

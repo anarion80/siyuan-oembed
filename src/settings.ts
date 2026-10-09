@@ -47,9 +47,13 @@ class SettingsManager {
     }
 
     async load() {
-        let loaded = await this.plugin.loadData(SettingsFile);
+        const loaded = await this.plugin.loadData(SettingsFile);
         if (loaded == null || loaded == undefined || loaded == "") {
             logger.debug("No config file, use defaults");
+            // Persist defaults only on the first run. Writing on every load makes the
+            // kernel broadcast a plugin-storage change, which reloads this plugin in
+            // every open frontend; each reload writes again and the loop never settles
+            // (visible as endless "Unloading Siyuan-Oembed" toasts with 2+ frontends).
             this.save();
         } else {
             logger.debug("Reading config file:", SettingsFile);
@@ -65,7 +69,6 @@ class SettingsManager {
             } catch (error_msg) {
                 logger.error("Error loading settings:", error_msg);
             }
-            this.save();
         }
         eventBus.publish(eventBus.EventSettingLoaded, {});
     }
