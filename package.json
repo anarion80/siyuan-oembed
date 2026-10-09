@@ -1,6 +1,6 @@
 {
   "name": "siyuan-oembed",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "type": "module",
   "description": "A plugin that extracts oembed data when pasting or creating a link",
   "repository": "https://github.com/anarion80/siyuan-oembed",
